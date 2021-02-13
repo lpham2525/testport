@@ -3,7 +3,7 @@ body {
   background: radial-gradient(#2b5876, #4e4376);
   line-height: 2em;
   margin: auto;
-  width: 100%;
+  width: auto;
   font-size: large;
 }
 
@@ -31,7 +31,7 @@ body {
 
 /****************************Header************************/
 
-header {
+/* header {
   background-color: rgba(0, 0, 0, 0.08);
   position: absolute;
   top: 0;
@@ -54,7 +54,7 @@ header a {
 
 header .header-container #branding {
   float: left;
-}
+} */
 
 #home-click {
   margin: 0;
@@ -596,12 +596,18 @@ div.button #explore a {
 
 /*Contact*/
 
+#contact {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
 .contact-logo {
   height: 50px;
   width: 50px;
 }
 
-h3 {
-  color: white;
+h2 {
+  color: lightgray;
   text-align: center;
+  font-family: "Lobster", cursive;
 }
