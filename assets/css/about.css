@@ -1,7 +1,7 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(0, 0, 0);
-  line-height: 1.5;
+  background: radial-gradient(#2b5876, #4e4376);
+  line-height: 2em;
   margin: auto;
   width: 100%;
   font-size: large;
@@ -148,19 +148,8 @@ header nav a:hover, .active {
 
 /****************** Section Two - About Me*****************/
 
-#radial {
-  /*background: #2b5876;
-  /* fallback for old browsers */
-  /*background: -webkit-linear-gradient( to right, #4e4376, #2b5876);
-  /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient( to right, #4e4376, #2b5876);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /*background: radial-gradient(#4e4376, rgb(63, 3, 63));*/
-  background: radial-gradient(#2b5876, #4e4376);
-}
-
 .section-container {
-  min-height: 100vh;
+  /* min-height: 100vh;  */
   border-bottom: 1px solid rgb(65, 65, 65);
 }
 
@@ -171,6 +160,7 @@ h1 {
   color: rgb(255, 255, 255);
   font-family: "Lobster", cursive;
   border-bottom: 1px solid rgb(65, 65, 65);
+  padding-bottom: 30px;
 }
 
 div.selfie-img img {
@@ -207,12 +197,8 @@ div.article {
 
 /* Introduction about me */
 
-.info {
-  font-size: 17px;
-  padding: 10px 140px 10px 15px;
-  line-height: 2em;
-  color: lightgray;
-  text-align: justify;
+div.info {
+  padding: 40px;
 }
 
 /***************** Skills ********************/
@@ -443,7 +429,7 @@ div.button #explore a {
   -webkit-border-radius: 20%;
   -moz-border-radius: 20%;
   -ms-border-radius: 20%;
-  -o-border-radius: 20%; 
+  -o-border-radius: 20%;
 }
 
 #skillsMain {
@@ -596,16 +582,23 @@ div.button #explore a {
   padding: 20px;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-.projectImg{
+.projectImg {
   width: 30em;
   height: 15em;
   text-align: center;
-} 
+}
 
-.project-item{
+.project-item {
   margin: auto;
+}
+
+<!--Contact-->
+
+.contact-logo {
+  height: 5em;
+  width: 5em;
 }
