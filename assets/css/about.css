@@ -7,6 +7,10 @@ body {
   font-size: large;
 }
 
+#main {
+  width: 90%;
+}
+
 @keyframes borderBottom {
   0% {
     width: 0;
