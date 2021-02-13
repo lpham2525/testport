@@ -12,16 +12,13 @@
   <!-----------Bootstrap---------->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!---------Favicon/Webfonts----->
-  <link rel="stylesheet" href="assets/css/all.min.css">
   <!----------CSS----------------->
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/index.css">
   <title>LanChi Pham's Portfolio</title>
 </head>
 
 <body>
-  <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -52,15 +49,13 @@
   </nav>
 
   <section id="main" >
+    <!-- About Me -->
     <div class="section-container info" id="about-me">
-      <div class="title">
-        <h1 id="about-me-title">About Me</h1>
-      </div>
+      <h1>About Me</h1>
       <div class="article">
         <div class="selfie-img">
           <img src="assets/homeImg/profile3.jpg" alt="LanChi Pham">
         </div>
-        <!----Add an iframe here--->
         <div class="info">
           <p> Hi, there! I'm LanChi, a front-end developer with a full-stack web development certificate from the University of CA, Irvine.
           </p>
@@ -68,7 +63,7 @@
           <p>My goal is to be a web developer who can create dynamic webpages that are as responsive and interactive as they are eye-popping and aesthetically bold.
           </p>
           <hr>
-          <p>I look forward to contributing my skills to an organization that seeks to create compelling and intuitive websites and apps. Check out my <a href='https://docs.google.com/document/d/1_eTe9DgBEbg6MghlNdJ14XX2KabCraCMirG6O505fH8/edit?usp=sharing'>resume</a> or<a href="./contact.html"> contact me</a> if you'd like to know more!
+          <p>I look forward to contributing my skills to an organization that seeks to create compelling and intuitive websites and apps. Check out my <a href='https://docs.google.com/document/d/1_eTe9DgBEbg6MghlNdJ14XX2KabCraCMirG6O505fH8/edit?usp=sharing'>resume</a> or<a href="#contact"> contact me</a> if you'd like to know more!
           </p>
           </div>
         </div>
@@ -76,217 +71,32 @@
     </div>
 
       <!-- Techstack -->
-      <menu id="skills">
-        <div class="skills-title">
-          <h1>TechStack</h1>
-        </div>
-        <img class="symbols" src="./assets/homeImg/html.jpg" alt="HTML5">
-        <img class="symbols" src="./assets/homeImg/css.jpg" alt="CSS3">
-        <img class="symbols" src="./assets/homeImg/js.jpg" alt="JavaScript">
-        <img class="symbols" src="./assets/homeImg/jquery.jpg" alt="jQuery">
-        <img class="symbols" src="./assets/homeImg/bootstrap.jpg" alt="Bootstrap">
-        <img class="symbols" src="./assets/homeImg/node.jpg" alt="NodeJS">
-        <img class="symbols" src="./assets/homeImg/expressJS.png" alt="Express JS">
-        <img class="symbols" src="./assets/homeImg/sequelize.jpg" alt="Sequelize">
-        <img class="symbols" src="./assets/homeImg/html.jpg" alt="Heroku">
-        <img class="symbols" src="./assets/homeImg/mysql.jpg" alt="MySQL">
-        <img class="symbols" src="./assets/homeImg/mongo.jpg" alt="mongodb">
-        <img class="symbols" src="./assets/homeImg/react.jpg" alt="React">
-        <img class="symbols" src="./assets/homeImg/npm.jpg" alt="npm Logo">
-        <img class="symbols" src="./assets/homeImg/MERN.jpg" alt="MERN">
-        <img class="symbols" src="./assets/homeImg/webpack.jpg" alt="Webpack">
-        <img class="symbols" src="./assets/homeImg/matUI.jpg" alt="Material-UI">
-        <img class="symbols" src="./assets/homeImg/materialize.jpg" alt="Materialize">
-        <img class="symbols" src="./assets/homeImg/github.png" alt="GitHub">
-        <img class="symbols" src="./assets/homeImg/postman.jpg" alt="Postman"> 
-        <img class="symbols" src="./assets/homeImg/vscode.png" alt="Visual Studio Code">
-        <div id="skillsDiv">
-        <div id="skillsMain">
-        <div class="condiv techstack">
-          <!-- <div class="techDiv">
-            <div class="techDivTitle">Frontend</div>
-              <img class="techUsed" src="assets/homeImg/html.jpg" alt="HTML5">
-              <img class="techUsed" src="assets/homeImg/css.jpg" alt="CSS3">
-          </div>
-
-                  <div class="condiv techstack">
-                    <div class="techDiv">
-                      <div class="techDivTitle">Backend</div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/node.jpg" alt="Node.js" />
-                        <span class="tooltiptext">Node.js</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/express.jpg" alt="Express" />
-                        <span class="tooltiptext">Express</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/sequelize.jpg" alt="Sequelize" />
-                        <span class="tooltiptext">Sequelize</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/mysql.jpg" alt="MySQL" />
-                        <span class="tooltiptext">MySQL</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/mongo.jpg" alt="mongoDB" />
-                        <span class="tooltiptext">MongoDB</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/npm.jpg" alt="npm" />
-                        <span class="tooltiptext">npm</span>
-                      </div>
-                      <div class="tech tooltip">
-                        <img class="techUsed" src="./assets/homeImg/passport.jpg" alt="Passport.js" />
-                        <span class="tooltiptext">Passport.js</span>
-                      </div>
-                    </div>
-
-                  <div class="condiv" id="techstack">
-                    <div class="techDiv">
-                      <div class="techDivTitle">Styling</div>
-                      <img class="techUsed" src="assets/homeImg/bootstrap.jpg" alt="bootstrap">
-                      <img class="techUsed" src="assets/homeImg/matUI.jpg" alt="Material-UI">
-                      <img class="techUsed" src="assets/homeImg/materialize.jpg" alt="materialize">
-                    </div>
-
-                  <div class="condiv" id="techstack">
-                    <div class="techDiv">
-                      <div class="techDivTitle">Technologies</div>
-                      <img class="techUsed" src="assets/homeImg/html.jpg" alt="HTML5">
-                      <img class="techUsed" src="assets/homeImg/css.jpg" alt="CSS3">
-                      <img class="techUsed" src="assets/homeImg/js.jpg" alt="JavaScript">
-                      <img class="techUsed" src="assets/homeImg/materialize.jpg" alt="materialize">
-                      <img class="techUsed" src="assets/homeImg/zomato.jpg" alt="zomato">
-                    </div>
-              </div>
-          </div>
-        
-          <div id="skillsDiv">
-            <div id="skillsMain">
-              <div class="techDiv" id="frontend" data-aos="fade-up">
-                <div class="techDivTitle">Frontend</div>
-                <div class="tech tooltip">
-                  <img class="techUsed" src="./assets/homeImg/html.jpg" alt="HTML5">
-                  <span class="tooltiptext">HTML</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/css.jpg" alt="CSS" />
-                  <span class="tooltiptext">CSS</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/js.jpg" alt="JavaScript" />
-                  <span class="tooltiptext">JavaScript</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/jquery.jpg" alt="jQuery" />
-                  <span class="tooltiptext">jQuery</span>
-                </div>
-        
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/bootstrap.jpg" alt="Bootstrap" />
-                  <span class="tooltiptext">Bootstrap</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/materialize.jpg" alt="Materialize UI" />
-                  <span class="tooltiptext">Materialize</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/matUI.jpg" alt="Material-UI" />
-                  <span class="tooltiptext">Material-UI</span>
-                </div>
-              </div>
-        
-              <div class="techDiv" id="backend" data-aos="fade-up">
-                <div class="techDivTitle">Backend</div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/node.jpg" alt="Node.js" />
-                  <span class="tooltiptext">Node.js</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/express.jpg" alt="Express" />
-                  <span class="tooltiptext">Express</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/sequelize.jpg" alt="Sequelize" />
-                  <span class="tooltiptext">Sequelize</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/mysql.jpg" alt="MySQL" />
-                  <span class="tooltiptext">MySQL</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/mongo.jpg" alt="mongoDB" />
-                  <span class="tooltiptext">MongoDB</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/npm.jpg" alt="npm" />
-                  <span class="tooltiptext">npm</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/passport.jpg" alt="Passport.js" />
-                  <span class="tooltiptext">Passport.js</span>
-                </div>
-              </div>
-        
-              <div class="techDiv" id="devops" data-aos="fade-up">
-                <div class="techDivTitle">DevOps</div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/github.png" alt="GitHub" />
-                  <span class="tooltiptext">GitHub</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="#" alt="Github" />
-                  <span class="tooltiptext">Github</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/npm.jpg" alt="npm" />
-                  <span class="tooltiptext">npm</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/webpack.jpg" alt="Webpack" />
-                  <span class="tooltiptext">Webpack</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/heroku.jpg" alt="Heroku" />
-                  <span class="tooltiptext">Heroku</span>
-                </div>
-              </div>
-
-              <div class="techDiv" id="testing" data-aos="fade-up">
-                <div class="techDivTitle">Styling</div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/bootstrap.jpg" alt="Bootstrap" />
-                  <span class="tooltiptext">Bootstrap</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/materialize.jpg" alt="Materialize UI" />
-                  <span class="tooltiptext">Materialize</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/matUI.jpg" alt="Material-UI" />
-                  <span class="tooltiptext">Material-UI</span>
-                </div>
-                </div>
-        
-              <div class="techDiv" id="tools" data-aos="fade-up">
-                <div class="techDivTitle">Tools</div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/vscode.jpg" alt="VS Code" />
-                  <span class="tooltiptext">VS Code</span>
-                </div>
-                <div class="tech tooltip">
-                  <img src="./assets/homeImg/postman.jpg" alt="Postman" />
-                  <span class="tooltiptext">Postman</span>
-                </div>
-              </div>
-    
-            </div>
-            <br />
-            <br />
-          </div>
-        </div> -->
-      </menu> 
+      
+    <div class="skills-title">
+      <h1>TechStack</h1>
+    </div>
+    <section id="skills">
+      <img class="symbols" src="./assets/homeImg/html.jpg" alt="HTML5">
+      <img class="symbols" src="./assets/homeImg/css.jpg" alt="CSS3">
+      <img class="symbols" src="./assets/homeImg/js.jpg" alt="JavaScript">
+      <img class="symbols" src="./assets/homeImg/jquery.jpg" alt="jQuery">
+      <img class="symbols" src="./assets/homeImg/bootstrap.jpg" alt="Bootstrap">
+      <img class="symbols" src="./assets/homeImg/node.jpg" alt="NodeJS">
+      <img class="symbols" src="./assets/homeImg/expressJS.png" alt="Express JS">
+      <img class="symbols" src="./assets/homeImg/sequelize.jpg" alt="Sequelize">
+      <img class="symbols" src="./assets/homeImg/html.jpg" alt="Heroku">
+      <img class="symbols" src="./assets/homeImg/mysql.jpg" alt="MySQL">
+      <img class="symbols" src="./assets/homeImg/mongo.jpg" alt="mongodb">
+      <img class="symbols" src="./assets/homeImg/react.jpg" alt="React">
+      <img class="symbols" src="./assets/homeImg/npm.jpg" alt="npm Logo">
+      <img class="symbols" src="./assets/homeImg/MERN.jpg" alt="MERN">
+      <img class="symbols" src="./assets/homeImg/webpack.jpg" alt="Webpack">
+      <img class="symbols" src="./assets/homeImg/matUI.jpg" alt="Material-UI">
+      <img class="symbols" src="./assets/homeImg/materialize.jpg" alt="Materialize">
+      <img class="symbols" src="./assets/homeImg/github.png" alt="GitHub">
+      <img class="symbols" src="./assets/homeImg/postman.jpg" alt="Postman"> 
+      <img class="symbols" src="./assets/homeImg/vscode.png" alt="Visual Studio Code">
+    </section> 
 
       <!-- Project section -->
       <h1 id="projects">Projects</h1>
@@ -295,27 +105,37 @@
           <img src="assets/homeImg/restaurant.jpg">
         </div>
         <div class="col-md-6">
-          <h4 id="project-name">Little Gems</h4>
+          <!-- <h4 id="project-name">Little Gems</h4>
           <p id="project-info">
           An app which points users to restaurants which have high ratings but are overlooked because they
           have sparse reviews.Using Google Maps, the app pinpoints the user's location and then leverages the user's input or keyword(s) to locate local eateries with ratings of 4 stars or higher but with fewer than 100 reviews.
-          </p>
+          </p> -->
+          <div class="projectDiv">
+            <div class="techDivTitle">Little Gems</div>
+            An app which points users to restaurants which have high ratings but are overlooked because they
+            have sparse reviews.Using Google Maps, the app pinpoints the user's location and then leverages the user's input or
+            keyword(s) to locate local eateries with ratings of 4 stars or higher but with fewer than 100 reviews.
+            <p class="smallDiv">Role:</p> <p class="center">Collaborator (front-end)</p>
+
       
           <!-- Skills -->
-          <div class="techDiv">
-            <div class="techDivTitle">Technologies</div>
+
+            <p class="smallDiv">Technologies</p>
+            <div class="center">
               <img class="techUsed" src="assets/homeImg/html.jpg" alt="HTML5">
               <img class="techUsed" src="assets/homeImg/css.jpg" alt="CSS3">
               <img class="techUsed" src="assets/homeImg/js.jpg" alt="JavaScript">
               <img class="techUsed" src="assets/homeImg/materialize.jpg" alt="materialize">
               <img class="techUsed" src="assets/homeImg/zomato.jpg" alt="zomato">
-          </div>
+              
       
           <!-- Link to GitHub and Project -->
           <div class="btn-links">
             <a id="github" class="btn btn-info" href="https://github.com/erikapaige/LittleGems/tree/LanChi"
               target="_blank">GitHub</a>
             <a id="demo" class="btn btn-success" href="https://erikapaige.github.io/LittleGems/">Deployed App</a>
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -469,8 +289,8 @@
           <br>
           <a href='https://docs.google.com/document/d/1_eTe9DgBEbg6MghlNdJ14XX2KabCraCMirG6O505fH8/edit?usp=sharing' target='_blank'>Résumé</a>
         </p>
-    </div>
-</div>
+      </div>
+  </div>
 
 </div>
 </div>

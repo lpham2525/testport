@@ -9,9 +9,10 @@ body {
 
 #main {
   width: 90%;
+  margin: auto;
 }
 
-@keyframes borderBottom {
+/* @keyframes borderBottom {
   0% {
     width: 0;
     border-bottom: 2px solid rgb(7, 255, 14);
@@ -20,7 +21,7 @@ body {
     width: 100%;
     border-bottom: 2px solid rgb(7, 255, 14);
   }
-}
+} */
 
 .header-container, .section-container {
   margin: auto;
@@ -205,6 +206,13 @@ div.info {
 
 /***************** Skills ********************/
 
+#skills {
+  text-align: center;
+  border-bottom: 1px solid rgb(65, 65, 65);
+  padding: 50px 0px 50px 0px;
+  margin: 10px 0px 50px 0px;
+}
+
 .skills-title {
   text-align: center;
   margin-top: 3%;
@@ -212,44 +220,6 @@ div.info {
   color: rgb(255, 255, 255);
   font-family: "Lobster", cursive;
   border-bottom: 1px solid rgb(65, 65, 65);
-}
-
-.html, .css, .JavaScript, .jQuery, .bootstrap, .nodeJS, .expressJS, .MySQL, .React, .mongodb, .npm, .mern {
-  margin-top: 30px;
-  height: 80px;
-  width: auto;
-  border-radius: 50%;
-  padding: 0 10px;
-}
-
-.npm, .mern {
-  border-radius: 0;
-}
-
-/* Button at the end of the page. This leads to projects page */
-
-div.button {
-  text-align: center;
-  margin-top: 25px;
-  padding-bottom: 30px;
-}
-
-div.button #explore {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.8rem;
-  margin: 0.375rem;
-  padding: 0.7rem 1.1rem;
-  border-radius: 0.125rem;
-  border: 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-div.button #explore a {
-  text-decoration: none;
-  color: white;
-  padding: 5px;
 }
 
 /*Footer*/
@@ -284,27 +254,15 @@ div.button #explore a {
     margin-bottom: 0;
     align-content: center;
   }
-  .html, .css, .JavaScript, .jQuery, .bootstrap, .nodeJS, .expressJS, .MySQL, .React, .mongodb, .firebase {
+  .symbols {
     height: 70px;
     width: auto;
-  }
-  .npm, .mern {
-    margin-top: 30px;
-    height: 70px;
   }
 }
 
 /*Responsive*/
 
 @media only screen and (max-width: 768px) {
-  .loaderContainer {
-    padding: 0 120px;
-  }
-  #loader {
-    padding: 300px 0 0 0;
-    font-size: 3.5rem;
-    font-weight: 500;
-  }
   div.selfie-img img {
     height: 300px;
     width: 300px;
@@ -331,30 +289,15 @@ div.button #explore a {
   div.title h1 {
     margin-top: 20%;
   }
-  .html, .css, .JavaScript, .jQuery, .bootstrap, .sass, .nodeJS, .expressJS, .MySQL, .React, .mongodb, .firebase {
+  .symbols {
     height: 50px;
     width: auto;
-  }
-  .sass {
-    width: 70px;
-  }
-  .npm, .mern {
-    margin-top: 30px;
-    height: 50px;
   }
 }
 
 /*mobile responsive*/
 
 @media only screen and (max-width: 640px) {
-  .loaderContainer {
-    padding: 0 40px;
-  }
-  #loader {
-    padding: 180px 0 0 0;
-    font-size: 2.1rem;
-    font-weight: 500;
-  }
   header {
     height: auto;
     padding: 10px 0;
@@ -385,18 +328,12 @@ div.button #explore a {
   div.title h1 {
     margin-top: 35%;
   }
-  .html, .css, .JavaScript, .jQuery, .bootstrap, .nodeJS, .expressJS, .MySQL, .React, .mongodb, .firebase {
+  .symbols {
     height: 50px;
     width: auto;
   }
-  .npm, .mern {
-    margin-top: 30px;
-    height: 50px;
-  }
   footer div.footerContainer {
-    display: flex;
     text-align: center;
-    flex-direction: column-reverse;
   }
 }
 
@@ -419,6 +356,33 @@ div.button #explore a {
     font-size: 15px;
     text-align: justify;
   }
+}
+
+/* Techstack Section */
+
+.projectDiv {
+  width: 700px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.smallDiv {
+  width: 700px;
+  height: auto;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(51, 45, 45);
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
 }
 
 .symbols {
@@ -521,7 +485,7 @@ div.button #explore a {
   opacity: 1;
 }
 
-/* techstack */
+/* Projects */
 
 .projectsSection {
   padding: 0 1em;
@@ -571,8 +535,6 @@ div.button #explore a {
   display: flex;
 }
 
-/*projects */
-
 .techUsed {
   /* border-radius: 50%; */
   height: 40px;
@@ -611,6 +573,7 @@ div.button #explore a {
 }
 
 h2 {
+  font-size: larger;
   color: lightgray;
   text-align: center;
   font-family: "Lobster", cursive;
