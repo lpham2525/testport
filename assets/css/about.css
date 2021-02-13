@@ -187,12 +187,10 @@ div.selfie-img img:hover {
 /* Bio info div. profile img and about-me */
 
 div.article {
-  background-color: transparent;
   color: white;
   height: auto;
   display: flex;
-  flex-flow: row;
-  margin-top: 3em;
+  flex-direction: row;
 }
 
 /* Introduction about me */
@@ -266,10 +264,10 @@ div.button #explore a {
     align-items: center;
     width: auto;
   }
-  div.bio-info {
+  div.info {
     line-height: 2em;
     text-align: justify;
-    /* font-size: 18px; */
+    font-size: 18px;
     padding: 0;
   }
   div.title h1 {
@@ -596,9 +594,14 @@ div.button #explore a {
   margin: auto;
 }
 
-<!--Contact-->
+/*Contact*/
 
 .contact-logo {
-  height: 5em;
-  width: 5em;
+  height: 50px;
+  width: 50px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
 }
