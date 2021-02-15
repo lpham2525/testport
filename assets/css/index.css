@@ -372,8 +372,12 @@ div.info {
 
 /* Techstack Section */
 
+.row {
+  margin: 10px 0px 10px 0px;
+}
+
 .projectDiv {
-  width: 700px;
+  width: 100%;
   height: auto;
   border: 1px solid black;
 }
@@ -394,6 +398,11 @@ div.info {
 }
 
 .center {
+  text-align: center;
+}
+
+.btn-links {
+  padding: 10px;
   text-align: center;
 }
 
@@ -434,6 +443,10 @@ div.info {
   margin: 5px;
   border: 1px solid #333333;
 }
+
+/* .left{
+  margin-left: 167px;
+} */
 
 .tech {
   width: 64px;
@@ -480,6 +493,10 @@ div.info {
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.5s;
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
 }
 
 .tooltip .tooltiptext::after {
@@ -563,13 +580,37 @@ div.info {
 }
 
 .projectImg {
-  width: 30em;
-  height: 15em;
+  width: 600px;
+  height: 450px;
   text-align: center;
 }
 
 .project-item {
   margin: auto;
+}
+
+.project-info {
+  padding-left: 10px;
+}
+
+#restaurant {
+  width: 650px;
+  height: 525px;
+}
+
+#artistaday {
+  width: 700px;
+  height: 450px;
+}
+
+#googlebooks {
+  width: 655px;
+  height: 485px;
+}
+
+#reactfolio {
+  width: 685px;
+  height: 530px;
 }
 
 /*Contact*/
